@@ -10,7 +10,7 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
-package-install:
+package-reinstall:
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
 brain-games:
