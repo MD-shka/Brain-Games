@@ -4,3 +4,6 @@
 [![Maintainability]
 (https://api.codeclimate.com/v1/badges/9e9b97db6682b9361244/maintainability)]
 (https://codeclimate.com/github/MD-shka/python-project-49/maintainability)
+
+# Example Game: brain-even
+https://asciinema.org/a/BufskH8gJqxpbvlhWA17Yh1MZ
