@@ -11,8 +11,8 @@ def is_even(num):
 def selection_result(player_answer, answer, name):
     if player_answer == answer:
         return f'Congratulations, {name}!'
-    return (f'"{player_answer}" is wrong answer ;(. Correct answer was "{answer}".\n'
-            f'Let\'s try again, {name}!')
+    return (f'"{player_answer}" is wrong answer ;(. Correct answer'
+            f' was "{answer}".\nLet\'s try again, {name}!')
 
 
 def check_even():
