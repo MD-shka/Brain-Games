@@ -7,3 +7,6 @@
 
 # Example Game: brain-even
 https://asciinema.org/a/BufskH8gJqxpbvlhWA17Yh1MZ
+
+# Example Game: brain-calc
+https://asciinema.org/a/UsdjeiXLXoTHraoAeYKUb703l
