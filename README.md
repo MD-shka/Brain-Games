@@ -10,3 +10,6 @@ https://asciinema.org/a/BufskH8gJqxpbvlhWA17Yh1MZ
 
 # Example Game: brain-calc
 https://asciinema.org/a/UsdjeiXLXoTHraoAeYKUb703l
+
+# Example Game: brain-gcd
+https://asciinema.org/a/IFEqfzlZlZCulQDZ3iMrXDmFy
