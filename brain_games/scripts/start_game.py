@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 from brain_games import engine
-from brain_games.games import even, calc, gcd, progression
+from brain_games.games import even, calc, gcd, progression, prime
 
 
 def brain_even():
@@ -20,6 +20,10 @@ def brain_progression():
     engine.game_engine(progression)
 
 
+def brain_prime():
+    engine.game_engine(prime)
+
+
 if __name__ == '__main__':
     if sys.argv[0] == 'brain-even':
         brain_even()
@@ -32,3 +36,6 @@ if __name__ == '__main__':
 
     elif sys.argv[0] == 'brain-progression':
         brain_progression()
+
+    else:
+        brain_prime()
