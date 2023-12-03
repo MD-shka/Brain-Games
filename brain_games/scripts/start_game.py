@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import sys
 import os
+from typing import Dict
 from brain_games import engine
 from brain_games.games import even, calc, gcd, progression, prime
 
 
-game_names = {
+game_names: Dict[str, callable] = {
     'brain-even': even,
     'brain-calc': calc,
     'brain-gcd': gcd,
