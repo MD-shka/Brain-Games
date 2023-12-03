@@ -14,11 +14,11 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.braingames:main"
-brain-even = "brain_games.scripts.start_game:brain_even"
-brain-calc = "brain_games.scripts.start_game:brain_calc"
-brain-gcd = "brain_games.scripts.start_game:brain_gcd"
-brain-progression = "brain_games.scripts.start_game:brain_progression"
-brain-prime = "brain_games.scripts.start_game:brain_prime"
+brain-even = "brain_games.scripts.start_game: main"
+brain-calc = "brain_games.scripts.start_game:main"
+brain-gcd = "brain_games.scripts.start_game:main"
+brain-progression = "brain_games.scripts.start_game:main"
+brain-prime = "brain_games.scripts.start_game:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
