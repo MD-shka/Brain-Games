@@ -9,12 +9,10 @@ def show_rules():
     return 'What is the result of the expression?'
 
 
-def make_question():
-    return (f'{random.randint(1, 999)} '
-            f'{random.choice(("+", "-", "*"))} '
-            f'{random.randint(1, 999)}')
-
-
-def check_answer(expression):
-    expression = expression.split()
-    return str(operators[expression[1]](int(expression[0]), int(expression[2])))
+def solution():
+    expression = (random.randint(1, 999),
+                  random.choice(("+", "-", "*")),
+                  random.randint(1, 999))
+    question = ' '.join(map(str, expression))
+    answer = str(operators[expression[1]](expression[0], expression[2]))
+    return question, answer
