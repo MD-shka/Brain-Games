@@ -1,41 +1,23 @@
 #!/usr/bin/env python3
 import sys
+import os
 from brain_games import engine
 from brain_games.games import even, calc, gcd, progression, prime
 
 
-def brain_even():
-    engine.game_engine(even)
+game_names = {
+    'brain-even': even,
+    'brain-calc': calc,
+    'brain-gcd': gcd,
+    'brain-progression': progression,
+    'brain-prime': prime,
+}
 
 
-def brain_calc():
-    engine.game_engine(calc)
-
-
-def brain_gcd():
-    engine.game_engine(gcd)
-
-
-def brain_progression():
-    engine.game_engine(progression)
-
-
-def brain_prime():
-    engine.game_engine(prime)
+def main():
+    game_name = game_names.get(os.path.basename(sys.argv[0]))
+    engine.game_engine(game_name)
 
 
 if __name__ == '__main__':
-    if sys.argv[0] == 'brain-even':
-        brain_even()
-
-    elif sys.argv[0] == 'brain-calc':
-        brain_calc()
-
-    elif sys.argv[0] == 'brain-gcd':
-        brain_gcd()
-
-    elif sys.argv[0] == 'brain-progression':
-        brain_progression()
-
-    else:
-        brain_prime()
+    main()
