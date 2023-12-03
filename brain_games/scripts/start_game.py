@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 from brain_games import engine
-from brain_games.games import even, calc, gcd
+from brain_games.games import even, calc, gcd, progression
 
 
 def brain_even():
@@ -16,6 +16,10 @@ def brain_gcd():
     engine.game_engine(gcd)
 
 
+def brain_progression():
+    engine.game_engine(progression)
+
+
 if __name__ == '__main__':
     if sys.argv[0] == 'brain-even':
         brain_even()
@@ -25,3 +29,6 @@ if __name__ == '__main__':
 
     elif sys.argv[0] == 'brain-gcd':
         brain_gcd()
+
+    elif sys.argv[0] == 'brain-progression':
+        brain_progression()
