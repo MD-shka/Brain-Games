@@ -13,3 +13,6 @@ https://asciinema.org/a/UsdjeiXLXoTHraoAeYKUb703l
 
 # Example Game: brain-gcd
 https://asciinema.org/a/IFEqfzlZlZCulQDZ3iMrXDmFy
+
+# Example Game: brain-progression
+https://asciinema.org/a/uoOSQp2eYwYI9KDU91aeZ5Lx9
