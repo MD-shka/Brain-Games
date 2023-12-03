@@ -11,10 +11,9 @@ def game_engine(game):
     for i in range(3):
         if i == 0:
             print(game.show_rules())
-        question = game.make_question()
+        question, answer = game.solution()
         print(f'Question: {question}')
         player_answer = input('Your answer: ')
-        answer = game.check_answer(question)
         if player_answer != answer:
             break
         print('Correct!')
