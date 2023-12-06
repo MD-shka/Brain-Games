@@ -1,18 +1,22 @@
-import random
+from random import randint
 
 
-def show_rules():
-    return 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
+START_INDEX = 0
+
+limit_nums = (1, 100)
+limit_length = (5, 10)
 
 
-def solution():
-    start = random.randint(1, 100)
-    step = random.randint(2, 99)
-    nums = []
-
-    for _ in range(random.randint(5, 10)):
-        nums.append(start + step)
-        start = nums[-1]
-    answer = str(random.choice(nums))
-    question = (' '.join(map(str, nums))).replace(answer, '..')
+def get_question_and_answer():
+    start = randint(*limit_nums)
+    step = randint(*limit_nums)
+    length = randint(*limit_length)
+    end_index = length - 1
+    random_index = randint(START_INDEX, end_index)
+    end = start + step * length
+    progression = list(range(start, end, step))
+    answer = str(progression[random_index])
+    progression[random_index] = '..'
+    question = ' '.join(map(str, progression))
     return question, answer

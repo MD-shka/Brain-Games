@@ -1,20 +1,18 @@
-import random
+from random import randint
 
 
-def is_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def show_rules():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+limit_nums = (1, 999)
 
 
-def solution():
-    question = random.randint(1, 999)
-    answer = ('no', 'yes')[is_prime(question)]
+def is_prime(number):
+    return (number > 1
+            and all(number % i != 0 for i in range(2, int(number ** 0.5) + 1)))
+
+
+def get_question_and_answer():
+    question = randint(*limit_nums)
+    answer = 'yes' if is_prime(question) else 'no'
     return question, answer

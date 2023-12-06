@@ -1,17 +1,17 @@
-import random
+from random import randint
 
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    return False
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def show_rules():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
+limit_nums = (1, 999)
 
 
-def solution():
-    question = random.randint(1, 999)
-    answer = ('no', 'yes')[is_even(question)]
+def is_even(number):
+    return number % 2 == 0
+
+
+def get_question_and_answer():
+    question = randint(*limit_nums)
+    answer = 'yes' if is_even(question) else 'no'
     return question, answer

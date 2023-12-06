@@ -1,14 +1,21 @@
-import random
+from random import randint
 
 
-def show_rules():
-    return 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def solution():
-    a, b = random.randint(1, 999), random.randint(1, 999)
-    question = f'{a} {b}'
+limit_nums = (1, 999)
+
+
+def get_gcd(a, b):
     while b != 0:
         a, b = b, a % b
-    answer = str(a)
+    return a
+
+
+def get_question_and_answer():
+    num_1 = randint(*limit_nums)
+    num_2 = randint(*limit_nums)
+    question = f'{num_1} {num_2}'
+    answer = str(get_gcd(num_1, num_2))
     return question, answer

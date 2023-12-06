@@ -1,18 +1,18 @@
-import random
-import operator
+from random import randint, choice
+from operator import add, sub, mul
 
 
-operators = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+OPERATORS = {'+': add, '-': sub, '*': mul}
+RULES = 'What is the result of the expression?'
 
 
-def show_rules():
-    return 'What is the result of the expression?'
+limit_nums = (1, 999)
 
 
-def solution():
-    expression = (random.randint(1, 999),
-                  random.choice(("+", "-", "*")),
-                  random.randint(1, 999))
-    question = ' '.join(map(str, expression))
-    answer = str(operators[expression[1]](expression[0], expression[2]))
+def get_question_and_answer():
+    num_1 = randint(*limit_nums)
+    num_2 = randint(*limit_nums)
+    op = choice(list(OPERATORS.keys()))
+    question = ' '.join(map(str, (num_1, op, num_2)))
+    answer = str(OPERATORS[op](num_1, num_2))
     return question, answer
