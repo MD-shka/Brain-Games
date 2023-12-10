@@ -4,14 +4,14 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 START_INDEX = 0
 
-limit_nums = (1, 100)
-limit_length = (5, 10)
+LIMIT_NUMS = (1, 100)
+LIMIT_LENGTH = (5, 10)
 
 
 def get_question_and_answer():
-    start = randint(*limit_nums)
-    step = randint(*limit_nums)
-    length = randint(*limit_length)
+    start = randint(*LIMIT_NUMS)
+    step = randint(*LIMIT_NUMS)
+    length = randint(*LIMIT_LENGTH)
     end_index = length - 1
     random_index = randint(START_INDEX, end_index)
     end = start + step * length
