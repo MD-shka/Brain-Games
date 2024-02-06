@@ -3,7 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9e9b97db6682b9361244/maintainability)](https://codeclimate.com/github/MD-shka/python-project-49/maintainability)
 
-# Description 
+### Description 
 Brain Games is a set of five console games. Each game asks questions to 
 which you have to give correct answers. After three correct answers,
 the game is considered to be completed. Incorrect answers end the game
@@ -15,23 +15,23 @@ Games:
 4. Finding the greatest common divisor.
 5. Finding a prime number.
 
-# Install and Run
+### Install and Run
 Download the project using "git clone".
 Go to the project directory: "cd brain-games".
 Install dependencies: "make install".
 Run the game, example "brain-even".
 
-# Example Game: brain-even
+### Example Game: brain-even
 https://asciinema.org/a/BufskH8gJqxpbvlhWA17Yh1MZ
 
-# Example Game: brain-calc
+### Example Game: brain-calc
 https://asciinema.org/a/UsdjeiXLXoTHraoAeYKUb703l
 
-# Example Game: brain-gcd
+### Example Game: brain-gcd
 https://asciinema.org/a/IFEqfzlZlZCulQDZ3iMrXDmFy
 
-# Example Game: brain-progression
+### Example Game: brain-progression
 https://asciinema.org/a/uoOSQp2eYwYI9KDU91aeZ5Lx9
 
-# Example Game: brain-prime
+### Example Game: brain-prime
 https://asciinema.org/a/GkQlnfA0VkMyKBJSKNwiTOnQP
